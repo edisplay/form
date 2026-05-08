@@ -17,6 +17,7 @@ title: "@tanstack/preact-form"
 
 - [FieldComponent](type-aliases/FieldComponent.md)
 - [LensFieldComponent](type-aliases/LensFieldComponent.md)
+- [PropsWithChildren](type-aliases/PropsWithChildren.md)
 - [ReactFormExtendedApi](type-aliases/ReactFormExtendedApi.md)
 - [ServerFormState](type-aliases/ServerFormState.md)
 - [UseField](type-aliases/UseField.md)

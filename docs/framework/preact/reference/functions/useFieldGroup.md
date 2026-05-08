@@ -9,7 +9,7 @@ title: useFieldGroup
 function useFieldGroup<TFormData, TFieldGroupData, TFields, TOnMount, TOnChange, TOnChangeAsync, TOnBlur, TOnBlurAsync, TOnSubmit, TOnSubmitAsync, TOnDynamic, TOnDynamicAsync, TOnServer, TComponents, TFormComponents, TSubmitMeta>(opts): AppFieldExtendedReactFieldGroupApi<TFormData, TFieldGroupData, TFields, TOnMount, TOnChange, TOnChangeAsync, TOnBlur, TOnBlurAsync, TOnSubmit, TOnSubmitAsync, TOnDynamic, TOnDynamicAsync, TOnServer, TSubmitMeta, TComponents, TFormComponents>;
 ```
 
-Defined in: [packages/react-form/src/useFieldGroup.tsx:96](https://github.com/TanStack/form/blob/main/packages/react-form/src/useFieldGroup.tsx#L96)
+Defined in: [packages/preact-form/src/useFieldGroup.tsx:90](https://github.com/TanStack/form/blob/main/packages/preact-form/src/useFieldGroup.tsx#L90)
 
 ## Type Parameters
 

@@ -9,7 +9,7 @@ title: createFormHook
 function createFormHook<TComponents, TFormComponents>(__namedParameters): object;
 ```
 
-Defined in: [packages/react-form/src/createFormHook.tsx:293](https://github.com/TanStack/form/blob/main/packages/react-form/src/createFormHook.tsx#L293)
+Defined in: [packages/preact-form/src/createFormHook.tsx:294](https://github.com/TanStack/form/blob/main/packages/preact-form/src/createFormHook.tsx#L294)
 
 ## Type Parameters
 
@@ -168,7 +168,7 @@ Gets a typed form from the `<form.AppForm />` context.
 ### withFieldGroup()
 
 ```ts
-withFieldGroup: <TFieldGroupData, TSubmitMeta, TRenderProps>(__namedParameters) => <TFormData, TFields, TOnMount, TOnChange, TOnChangeAsync, TOnBlur, TOnBlurAsync, TOnSubmit, TOnSubmitAsync, TOnDynamic, TOnDynamicAsync, TOnServer, TFormSubmitMeta>(params) => ReactNode | Promise<ReactNode>;
+withFieldGroup: <TFieldGroupData, TSubmitMeta, TRenderProps>(__namedParameters) => <TFormData, TFields, TOnMount, TOnChange, TOnChangeAsync, TOnBlur, TOnBlurAsync, TOnSubmit, TOnSubmitAsync, TOnDynamic, TOnDynamicAsync, TOnServer, TFormSubmitMeta>(params) => ComponentChildren;
 ```
 
 #### Type Parameters
@@ -195,7 +195,7 @@ withFieldGroup: <TFieldGroupData, TSubmitMeta, TRenderProps>(__namedParameters) 
 #### Returns
 
 ```ts
-<TFormData, TFields, TOnMount, TOnChange, TOnChangeAsync, TOnBlur, TOnBlurAsync, TOnSubmit, TOnSubmitAsync, TOnDynamic, TOnDynamicAsync, TOnServer, TFormSubmitMeta>(params): ReactNode | Promise<ReactNode>;
+<TFormData, TFields, TOnMount, TOnChange, TOnChangeAsync, TOnBlur, TOnBlurAsync, TOnSubmit, TOnSubmitAsync, TOnDynamic, TOnDynamicAsync, TOnServer, TFormSubmitMeta>(params): ComponentChildren;
 ```
 
 ##### Type Parameters
@@ -258,11 +258,11 @@ withFieldGroup: <TFieldGroupData, TSubmitMeta, TRenderProps>(__namedParameters) 
 
 ###### params
 
-`PropsWithChildren`\<`NoInfer`\<`TRenderProps`\> & `object`\>
+[`PropsWithChildren`](../type-aliases/PropsWithChildren.md)\<`NoInfer`\<`TRenderProps`\> & `object`\>
 
 ##### Returns
 
-`ReactNode` \| `Promise`\<`ReactNode`\>
+`ComponentChildren`
 
 ### withForm()
 
@@ -333,4 +333,4 @@ withForm: <TFormData, TOnMount, TOnChange, TOnChangeAsync, TOnBlur, TOnBlurAsync
 
 #### Returns
 
-`FunctionComponent`\<`PropsWithChildren`\<`NoInfer`\<`UnwrapOrAny`\<`TRenderProps`\>\> & `object`\>\>
+`FunctionComponent`\<[`PropsWithChildren`](../type-aliases/PropsWithChildren.md)\<`NoInfer`\<`UnwrapOrAny`\<`TRenderProps`\>\> & `object`\>\>

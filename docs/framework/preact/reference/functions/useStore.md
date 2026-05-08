@@ -5,8 +5,6 @@ title: useStore
 
 # Function: useStore()
 
-## Call Signature
-
 ```ts
 function useStore<TState, TSelected>(
    store, 
@@ -14,71 +12,32 @@ function useStore<TState, TSelected>(
    options?): TSelected;
 ```
 
-Defined in: node\_modules/.pnpm/@tanstack+preact-store@0.8.1\_react-dom@19.1.0\_react@19.1.0\_\_react@19.1.0/node\_modules/@tanstack/preact-store/dist/esm/index.d.ts:11
+Defined in: [packages/preact-form/src/useStore.ts:34](https://github.com/TanStack/form/blob/main/packages/preact-form/src/useStore.ts#L34)
 
-### Type Parameters
+## Type Parameters
 
-#### TState
-
-`TState`
-
-#### TSelected
-
-`TSelected` = `NoInfer`\<`TState`\>
-
-### Parameters
-
-#### store
-
-`Store`\<`TState`, `any`\>
-
-#### selector?
-
-(`state`) => `TSelected`
-
-#### options?
-
-`UseStoreOptions`\<`TSelected`\>
-
-### Returns
-
-`TSelected`
-
-## Call Signature
-
-```ts
-function useStore<TState, TSelected>(
-   store, 
-   selector?, 
-   options?): TSelected;
-```
-
-Defined in: node\_modules/.pnpm/@tanstack+preact-store@0.8.1\_react-dom@19.1.0\_react@19.1.0\_\_react@19.1.0/node\_modules/@tanstack/preact-store/dist/esm/index.d.ts:12
-
-### Type Parameters
-
-#### TState
+### TState
 
 `TState`
 
-#### TSelected
+### TSelected
 
 `TSelected` = `NoInfer`\<`TState`\>
 
-### Parameters
+## Parameters
 
-#### store
+### store
 
-`Derived`\<`TState`, `any`\>
+`StoreLike`\<`TState`\>
 
-#### selector?
+### selector?
 
 (`state`) => `TSelected`
 
-#### options?
+### options?
 
 `UseStoreOptions`\<`TSelected`\>
 
-### Returns
+## Returns
 
 `TSelected`

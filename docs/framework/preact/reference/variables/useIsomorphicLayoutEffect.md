@@ -6,19 +6,15 @@ title: useIsomorphicLayoutEffect
 # Variable: useIsomorphicLayoutEffect()
 
 ```ts
-const useIsomorphicLayoutEffect: (effect, deps?) => void;
+const useIsomorphicLayoutEffect: (effect, inputs?) => void;
 ```
 
-Defined in: [packages/react-form/src/useIsomorphicLayoutEffect.ts:3](https://github.com/TanStack/form/blob/main/packages/react-form/src/useIsomorphicLayoutEffect.ts#L3)
+Defined in: [packages/preact-form/src/useIsomorphicLayoutEffect.ts:3](https://github.com/TanStack/form/blob/main/packages/preact-form/src/useIsomorphicLayoutEffect.ts#L3)
 
-The signature is identical to `useEffect`, but it fires synchronously after all DOM mutations.
-Use this to read layout from the DOM and synchronously re-render. Updates scheduled inside
-`useLayoutEffect` will be flushed synchronously, before the browser has a chance to paint.
-
-Prefer the standard `useEffect` when possible to avoid blocking visual updates.
-
-If you’re migrating code from a class component, `useLayoutEffect` fires in the same phase as
-`componentDidMount` and `componentDidUpdate`.
+Accepts a function that contains imperative, possibly effectful code.
+Use this to read layout from the DOM and synchronously re-render.
+Updates scheduled inside `useLayoutEffect` will be flushed synchronously, after all DOM mutations but before the browser has a chance to paint.
+Prefer the standard `useEffect` hook when possible to avoid blocking visual updates.
 
 ## Parameters
 
@@ -26,18 +22,14 @@ If you’re migrating code from a class component, `useLayoutEffect` fires in th
 
 `EffectCallback`
 
-### deps?
+Imperative function that can return a cleanup function
 
-`DependencyList`
+### inputs?
+
+`Inputs`
+
+If present, effect will only activate if the values in the list change (using ===).
 
 ## Returns
 
 `void`
-
-## Version
-
-16.8.0
-
-## See
-
-[https://react.dev/reference/react/useLayoutEffect](https://react.dev/reference/react/useLayoutEffect)

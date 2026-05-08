@@ -9,7 +9,7 @@ title: createFormHookContexts
 function createFormHookContexts(): object;
 ```
 
-Defined in: [packages/react-form/src/createFormHook.tsx:95](https://github.com/TanStack/form/blob/main/packages/react-form/src/createFormHook.tsx#L95)
+Defined in: [packages/preact-form/src/createFormHook.tsx:91](https://github.com/TanStack/form/blob/main/packages/preact-form/src/createFormHook.tsx#L91)
 
 ## Returns
 
@@ -18,13 +18,13 @@ Defined in: [packages/react-form/src/createFormHook.tsx:95](https://github.com/T
 ### fieldContext
 
 ```ts
-fieldContext: Context<AnyFieldApi>;
+fieldContext: Context<AnyFieldApi> = FieldContext;
 ```
 
 ### formContext
 
 ```ts
-formContext: Context<AnyFormApi>;
+formContext: Context<AnyFormApi> = FormContext;
 ```
 
 ### useFieldContext()
