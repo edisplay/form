@@ -9,7 +9,7 @@ title: FieldState
 type FieldState<TParentData, TName, TData, TOnMount, TOnChange, TOnChangeAsync, TOnBlur, TOnBlurAsync, TOnSubmit, TOnSubmitAsync, TOnDynamic, TOnDynamicAsync, TFormOnMount, TFormOnChange, TFormOnChangeAsync, TFormOnBlur, TFormOnBlurAsync, TFormOnSubmit, TFormOnSubmitAsync, TFormOnDynamic, TFormOnDynamicAsync> = object;
 ```
 
-Defined in: [packages/form-core/src/FieldApi.ts:872](https://github.com/TanStack/form/blob/main/packages/form-core/src/FieldApi.ts#L872)
+Defined in: [packages/form-core/src/FieldApi.ts:877](https://github.com/TanStack/form/blob/main/packages/form-core/src/FieldApi.ts#L877)
 
 An object type representing the state of a field.
 
@@ -107,7 +107,7 @@ An object type representing the state of a field.
 meta: FieldMeta<TParentData, TName, TData, TOnMount, TOnChange, TOnChangeAsync, TOnBlur, TOnBlurAsync, TOnSubmit, TOnSubmitAsync, TOnDynamic, TOnDynamicAsync, TFormOnMount, TFormOnChange, TFormOnChangeAsync, TFormOnBlur, TFormOnBlurAsync, TFormOnSubmit, TFormOnSubmitAsync, TFormOnDynamic, TFormOnDynamicAsync>;
 ```
 
-Defined in: [packages/form-core/src/FieldApi.ts:910](https://github.com/TanStack/form/blob/main/packages/form-core/src/FieldApi.ts#L910)
+Defined in: [packages/form-core/src/FieldApi.ts:915](https://github.com/TanStack/form/blob/main/packages/form-core/src/FieldApi.ts#L915)
 
 The current metadata of the field.
 
@@ -119,6 +119,6 @@ The current metadata of the field.
 value: TData;
 ```
 
-Defined in: [packages/form-core/src/FieldApi.ts:906](https://github.com/TanStack/form/blob/main/packages/form-core/src/FieldApi.ts#L906)
+Defined in: [packages/form-core/src/FieldApi.ts:911](https://github.com/TanStack/form/blob/main/packages/form-core/src/FieldApi.ts#L911)
 
 The current value of the field.
